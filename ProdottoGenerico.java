@@ -147,5 +147,13 @@ public abstract class ProdottoGenerico implements Comparable<ProdottoGenerico>{
         if(this.prezzoVendita < o.prezzoVendita) return -1;
         return 0;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof ProdottoGenerico){
+            return ((ProdottoGenerico) obj).codiceProdotto == this.codiceProdotto;
+        }
+        return false;
+    }
     
 }

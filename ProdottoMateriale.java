@@ -30,7 +30,7 @@ public abstract class ProdottoMateriale extends ProdottoGenerico{
         this.profondita = profondita;
         this.peso = peso;
     }
-    public ProdottoMateriale(float larghezza, float altezza, float profondita, float peso, ProdottoMateriale pm) {
+    public ProdottoMateriale(ProdottoMateriale pm) {
         super(pm);
         this.larghezza = pm.larghezza;
         this.altezza = pm.altezza;
